@@ -11,7 +11,7 @@ export const useGlobalStore = defineStore("global", () => {
   const isLoading = ref<boolean>(false);
   const error = ref<string>("");
   const success = ref<string>("");
-  const entityList = reactive<Record<string,string>[]>(['kjhj', 'kjhjkhjk'])
+  const entityList = reactive<Record<string,string>[]>([])
 
   const handleChangeSelected = (option: TSelectOption): void => {
     currentSelectedOption.value = option.name;
