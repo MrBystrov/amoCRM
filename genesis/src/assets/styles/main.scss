@@ -1,0 +1,54 @@
+
+:root {
+  --main-blue: rgb(22, 77, 187);
+  --main-blue-hovered: rgb(63, 111, 208);
+
+  --main-red: rgb(209, 51, 51);
+  --main-red-hovered: rgb(189, 94, 94);
+
+  --main-green: rgb(20, 114, 37);
+  --main-green-hovered: rgb(40, 135, 57);
+  
+  --main-text: rgb(0, 0, 0);
+  --main-text-contrast: rgb(255, 254, 254);
+
+  --main-gray:  rgb(225, 221, 221);
+  --main-gray:  rgb(225, 221, 221);
+  --secondary-gray:  rgb(150, 145, 145); 
+
+  --main-background:  rgb(255, 254, 254);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: var(--main-red);
+}
+
+.success {
+  color: var(--main-green);
+}
+
+.entity-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entity-list-title {
+  font-weight: bold;
+}
+
+
+

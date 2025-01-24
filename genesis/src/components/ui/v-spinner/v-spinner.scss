@@ -1,0 +1,41 @@
+.v-spinner {
+    width: 20px;
+    height: 20px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    &--white{
+        border-top: 5px solid var(--main-text-contrast);
+        border-right: 5px solid var(--main-text-contrast);
+    }
+    &--black{
+        border-top: 5px solid var(--main-text);
+        border-right: 5px solid var(--main-text);
+    }
+    &--s{
+        width: 16px;
+        height: 16px;
+    }
+    &--m{
+        width: 20px;
+        height: 20px;
+    }
+    &--l{
+        width: 24px;
+        height: 24px;
+    }
+    &--xl{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

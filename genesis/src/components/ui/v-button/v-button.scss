@@ -1,0 +1,71 @@
+.v-button {
+  font-weight: 500;
+  width: max-content;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  &--blue {
+    background-color: var(--main-blue);
+    color: var(--main-text-contrast);
+    &:hover {
+      background-color: var(--main-blue-hovered);
+    }
+    &:active {
+      transform: translate(1px, 1px);
+    }
+  }
+  &--red {
+    background-color: var(--main-red);
+    color: var(--main-text-contrast);
+    &:hover {
+      background-color: var(--main-red-hovered);
+    }
+    &:active {
+      transform: translate(1px, 1px);
+    }
+  }
+  &--green {
+    background-color: var(--main-green);
+    color: var(--main-text-contrast);
+    &:hover {
+      background-color: var(--main-green-hovered);
+    }
+    &:active {
+      transform: translate(1px, 1px);
+    }
+  }
+  &--transparent {
+    background-color: transparent;
+    color: var(--main-text);
+    &:hover {
+      background-color: var(--main-green-hovered);
+    }
+    &:active {
+      transform: translate(1px, 1px);
+    }
+  }
+  &--transparent {
+    background-color: transparent;
+    color: var(--main-text);
+    &:hover {
+      background-color: var(--main-green-hovered);
+    }
+    &:active {
+      transform: translate(1px, 1px);
+    }
+  }
+  &:disabled {
+    color: var(--secondary-gray);
+    background-color: var(--main-text-contrast);
+    border: 1px solid var(--secondary-gray);
+    cursor: not-allowed;
+    transition: none;
+    &:hover,
+    &:active {
+      background-color: inherit;
+      transform: none;
+    }
+  }
+}
